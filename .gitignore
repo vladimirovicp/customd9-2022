@@ -3,47 +3,61 @@
 # earlier versions of Drupal are tracked in `community/PHP/`
 
 # Ignore configuration files that may contain sensitive information
-/sites/*/*settings*.php
-/sites/*/*services*.yml
+#/public_html/sites/*/*settings*.php
+#/public_html/sites/*/*services*.yml
 
 # Ignore paths that may contain user-generated content
-/sites/*/files
-/sites/*/public
-/sites/*/private
-/sites/*/files-public
-/sites/*/files-private
+/public_html/public_html/sites/*/files
+/public_html/sites/*/public
+/public_html/sites/*/private
+/public_html/sites/*/files-public
+/public_html/sites/*/files-private
 
 # Ignore paths that may contain temporary files
-/sites/*/translations
-/sites/*/tmp
-/sites/*/cache
+/public_html/sites/*/translations
+/public_html/sites/*/tmp
+/public_html/sites/*/cache
 
 # Ignore testing related files
-/sites/simpletest
+/public_html/sites/simpletest
 
 # Ignore drupal core (if not versioning drupal sources)
-/core
-/modules/README.txt
-/profiles/README.txt
-/sites/README.txt
-/sites/example.sites.php
-/sites/example.settings.local.php
-/sites/development.services.yml
+/public_html/core
+/public_html/modules/README.txt
+/public_html/profiles/README.txt
+/public_html/sites/README.txt
+/public_html/sites/example.sites.php
+/public_html/sites/example.settings.local.php
+/public_html/sites/development.services.yml
 /themes/README.txt
 /vendor
-/.csslintrc
-/.editorconfig
-/.eslintignore
-/.eslintrc.json
-/.gitattributes
-/.htaccess
-/autoload.php
-/composer.json
-/composer.lock
-/example.gitignore
-/index.php
-/LICENSE.txt
-/README.txt
-/robots.txt
-/update.php
-/web.config
+/public_html/.csslintrc
+/public_html/.editorconfig
+/public_html/.eslintignore
+/public_html/.eslintrc.json
+/public_html/.gitattributes
+/public_html/.htaccess
+/public_html/autoload.php
+#/composer.json
+#/composer.lock
+/public_html/example.gitignore
+/public_html/index.php
+/public_html/LICENSE.txt
+/public_html/README.txt
+/public_html/robots.txt
+/public_html/update.php
+/public_html/web.config
+
+
+public_html/sites/default/files/php/
+public_html/core
+public_html/libraries
+public_html/modules/contrib/
+public_html/themes/contrib/
+public_html/sites/default/files/css
+public_html/sites/default/files/js
+public_html/sites/default/files/languages
+public_html/sites/default/files/php
+drush/Commands/contrib/
+/tmp/
+.idea
