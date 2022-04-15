@@ -11,12 +11,17 @@ use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\node\Entity\NodeType;
 
+use Drupal\user\UserInterface;
+
 use Drupal\Core\StringTranslation\TranslatableMarkup;
 
 /**
  * Implements hook_entity_extra_field_info().
  */
 function dummy_extra_fields_entity_extra_field_info() {
+
+
+  dpm('admin/structure/types/manage/article/form-display');
 
 
 
@@ -44,6 +49,26 @@ function dummy_extra_fields_entity_extra_field_info() {
     'label' => new TranslatableMarkup('extra article test'),
     'description' => new TranslatableMarkup('Prints "extra article test" string.'),
   ];
+
+  $extra['node']['article']['form']['extra_article_test'] = [
+    'label' => t('extra article test'),
+    'weight' => 100,
+  ];
+
+
+  $extra['account']['display']['extra_user_test'] = [
+    'label' => t('extra user test'),
+    'weight' => 100,
+  ];
+
+  $extra['account']['form']['extra_user_test'] = [
+    'label' => t('extra user test'),
+    'weight' => 100,
+  ];
+
+
+
+
 
 
 
@@ -93,7 +118,11 @@ function dummy_extra_fields_form_node_form_alter(&$form, FormStateInterface $for
   if (!empty($storage['form_display']) && $storage['form_display'] instanceof EntityFormDisplay) {
     $form_display = $storage['form_display'];
 
+
+//    dpm($form_display);
+
     if ($component = $form_display->getComponent('simple_captcha')) {
+
       $form['simple_captcha'] = [
         '#type' => 'textfield',
         '#title' => t('Simple captcha'),
@@ -102,6 +131,8 @@ function dummy_extra_fields_form_node_form_alter(&$form, FormStateInterface $for
       ];
       $form['#validate'][] = '_dummy_extra_fields_simple_captcha_validation';
     }
+
+
 
 
     if ($component2 = $form_display->getComponent('extra_article_test')) {
@@ -130,4 +161,42 @@ function _dummy_extra_fields_simple_captcha_validation(&$form, FormStateInterfac
   }
 }
 
+
+
+/*****************user*****************/
+
+
+
+/**
+ * Implements hook_form_alter().
+ */
+function dummy_extra_fields_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+
+//
+
+  if($form_id == 'user_form'){
+
+
+      dpm('user/1/edit');
+
+
+  }
+
+  if ($form_id == 'user_register_form') {
+    dpm($form_id);
+  }
+
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_view().
+ */
+function dummy_extra_fields_user_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+
+
+  dpm('path = /user/1');
+
+  dpm($entity);
+
+}
 
