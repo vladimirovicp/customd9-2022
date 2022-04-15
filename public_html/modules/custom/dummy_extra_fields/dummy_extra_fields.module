@@ -56,14 +56,14 @@ function dummy_extra_fields_entity_extra_field_info() {
   ];
 
 
-  $extra['account']['display']['extra_user_test'] = [
+  $extra['user']['user']['display']['extra_user_test'] = [
     'label' => t('extra user test'),
-    'weight' => 100,
+    'weight' => 50,
   ];
 
-  $extra['account']['form']['extra_user_test'] = [
+  $extra['user']['user']['form']['extra_user_test'] = [
     'label' => t('extra user test'),
-    'weight' => 100,
+    'weight' => 50,
   ];
 
 
@@ -180,10 +180,49 @@ function dummy_extra_fields_form_alter(&$form, FormStateInterface $form_state, $
       dpm('user/1/edit');
 
 
+    $storage = $form_state->getStorage();
+    if (!empty($storage['form_display']) && $storage['form_display'] instanceof EntityFormDisplay) {
+
+      $form_display = $storage['form_display'];
+      if ($extra_user_test = $form_display->getComponent('extra_user_test')) {
+
+        $form['extra_user_test'] = [
+          '#type' => 'textfield',
+          '#title' => t('extra_user_test'),
+          '#default_value' => t('extra_user_test'),
+          '#weight' => $extra_user_test['weight'],
+        ];
+
+
+
+      }
+
+
+    }
+
+//    if (!empty($storage['form_display']) && $storage['form_display'] instanceof EntityFormDisplay) {
+//      $form_display = $storage['form_display'];
+//
+//
+//
+//
+//      if ($component = $form_display->getComponent('simple_captcha')) {
+//
+//        $form['simple_captcha'] = [
+//          '#type' => 'textfield',
+//          '#title' => t('Simple captcha'),
+//          '#default_value' => t('Empty this field to submit the form'),
+//          '#weight' => $component['weight'],
+//        ];
+//        $form['#validate'][] = '_dummy_extra_fields_simple_captcha_validation';
+//      }
+//    }
+
+
   }
 
   if ($form_id == 'user_register_form') {
-    dpm($form_id);
+     dpm($form_id);
   }
 
 }
@@ -194,9 +233,9 @@ function dummy_extra_fields_form_alter(&$form, FormStateInterface $form_state, $
 function dummy_extra_fields_user_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
 
 
-  dpm('path = /user/1');
+//  dpm('path = /user/1');
 
-  dpm($entity);
+//  dpm($entity);
 
 }
 
