@@ -48,7 +48,8 @@
 /public_html/update.php
 /public_html/web.config
 
-
+.editorconfig
+.gitattributes
 public_html/sites/default/files/php/
 public_html/core
 public_html/libraries
