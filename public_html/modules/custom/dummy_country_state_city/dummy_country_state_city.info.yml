@@ -1,0 +1,6 @@
+name: dummy Country State City Field
+type: module
+description: 'The country, state and city field.'
+package: 'Dummy'
+core_version_requirement: ^9
+
