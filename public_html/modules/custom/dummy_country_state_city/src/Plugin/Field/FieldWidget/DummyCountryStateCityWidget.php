@@ -32,6 +32,48 @@ class DummyCountryStateCityWidget extends WidgetBase
    */
   public function formElement(FieldItemListInterface $items, $delta, array $element, array &$form, FormStateInterface $form_state)
   {
+
+    $module_handler = \Drupal::service('module_handler');
+
+    //dpm($module_handler);
+    $module_path = $module_handler->getModule('dummy_country_state_city')->getPath(); // modules/custom/dummy_country_state_city
+
+//    dpm($module_path);
+
+    //https://niklan.net/blog/133
+
+    $array = $fields = [];
+    $i = 0;
+
+    //$handle = @fopen($module_path . '/states.csv', "r");
+
+    //fopen($this->file->getFileUri());
+
+    dpm($handle);
+
+//    if ($handle) {
+//      while (($row = fgetcsv($handle, 4096)) !== FALSE) {
+//        if (empty($fields)) {
+//          $fields = $row;
+//          continue;
+//        }
+//        foreach ($row as $k => $value) {
+//          $array[$i][$fields[$k]] = $value;
+//        }
+//        $i++;
+//      }
+//      if (!feof($handle)) {
+//        echo "Error: unexpected fgets() fail\n";
+//      }
+//      fclose($handle);
+//    }
+//
+//
+//    dpm($array);
+
+    $countries = [];
+
+
     $element['country'] = [
       '#type' => 'select',
       '#options' => [

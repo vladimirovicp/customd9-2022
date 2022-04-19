@@ -14,6 +14,7 @@ use Drupal\Core\TypedData\DataDefinition;
  *   id = "dummy_country_state_city_type",
  *   label = @Translation("Dummy Country state city type"),
  *   description = @Translation("Dummy Country ,state and city plugin"),
+ *   category = @Translation("Dummy"),
  *   default_widget = "dummy_country_state_city_widget",
  *
  * )
