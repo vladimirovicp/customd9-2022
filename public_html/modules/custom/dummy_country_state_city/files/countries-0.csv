@@ -1,0 +1,251 @@
+id;nameEn;nameRu;iso3;iso2;currency
+1;Afghanistan;Афганистан;AFG;AF;AFN
+2;Aland Islands;Аландские острова;ALA;AX;EUR
+3;Albania;Албания;ALB;AL;ALL
+4;Algeria;Алжир;DZA;DZ;DZD
+5;American Samoa;Американское Самоа;ASM;AS;USD
+6;Andorra;Андорра;AND;AD;EUR
+7;Angola;Ангола;AGO;AO;AOA
+8;Anguilla;Ангилья;AIA;AI;XCD
+9;Antarctica;Антарктида;ATA;AQ,;
+10;Antigua And Barbuda;Антигуа и Барбуда;ATG;AG;XCD
+11;Argentina;Аргентина;ARG;AR;ARS
+12;Armenia;Армения;ARM;AM;AMD
+13;Aruba;Аруба;ABW;AW;AWG
+14;Australia;Австралия;AUS;AU;AUD
+15;Austria;Австрия;AUT;AT;EUR
+16;Azerbaijan;Азербайджан;AZE;AZ;AZN
+17;The Bahamas;Багамские острова;BHS;BS;BSD
+18;Bahrain;Бахрейн;BHR;BH;BHD
+19;Bangladesh;Бангладеш;BGD;BD;BDT
+20;Barbados;Барбадос;BRB;BB;BBD
+21;Belarus;Беларусь;BLR;BY;BYN
+22;Belgium;Бельгия;BEL;BE;EUR
+23;Belize;Белиз;BLZ;BZ;BZD
+24;Benin;Бенин;BEN;BJ;XOF
+25;Bermuda;Бермудские острова;BMU;BM;BMD
+26;Bhutan;Бутан;BTN;BT;BTN
+27;Bolivia;Боливия;BOL;BO;BOB
+28;Bosnia and Herzegovina;Босния и Герцеговина;BIH;BA;BAM
+29;Botswana;Ботсвана;BWA;BW;BWP
+30;Bouvet Island;Остров Буве;BVT;BV;NOK
+31;Brazil;Бразилия;BRA;BR;BRL
+32;British Indian Ocean Territory;Британская территория в Индийском океане;IOT;IO;USD
+33;Brunei;Бруней;BRN;BN;BND
+34;Bulgaria;Болгария;BGR;BG;BGN
+35;Burkina Faso;Буркина-Фасо;BFA;BF;XOF
+36;Burundi;Бурунди;BDI;BI;BIF
+37;Cambodia;Камбоджа;KHM;KH;KHR
+38;Cameroon;Камерун;CMR;CM;XAF
+39;Canada;Канада;CAN;CA;CAD
+40;Cape Verde;Кабо-Верде;CPV;CV;CVE
+41;Cayman Islands;Каймановы острова;CYM;KY;KYD
+42;Central African Republic;Центральноафриканская Республика;CAF;CF;XAF
+43;Chad;Чад;TCD;TD;XAF
+44;Chile;Чили;CHL;CL;CLP
+45;China;Китай;CHN;CN;CNY
+46;Christmas Island;Остров Рождества;CXR;CX;AUD
+47;Cocos (Keeling) Islands;Кокосовые (килинговые) острова;CCK;CC;AUD
+48;Colombia;Колумбия;COL;CO;COP
+49;Comoros;Коморы;COM;KM;KMF
+50;Congo;Конго;COG;CG;XAF
+51;Democratic Republic Of The Congo;Демократическая Республика Конго;COD;CD;CDF
+52;Cook Islands;Острова Кука;COK;CK;NZD
+53;Costa Rica;Коста-Рика;CRI;CR;CRC
+54;Cote D'Ivoire (Ivory Coast);Кот-д'Ивуар;CIV;CI;XOF
+55;Croatia (Hrvatska);Хорватия;HRV;HR;HRK
+56;Cuba;Куба;CUB;CU;CUP
+57;Cyprus;Кипр;CYP;CY;EUR
+58;Czech Republic;Чешская Республика;CZE;CZ;CZK
+59;Denmark;Дания;DNK;DK;DKK
+60;Djibouti;Джибути;DJI;DJ;DJF
+61;Dominica;Доминика;DMA;DM;XCD
+62;Dominican Republic;Доминиканская Республика;DOM;DO;DOP
+63;East Timor;Восточный Тимор;TLS;TL;USD
+64;Ecuador;Эквадор;ECU;EC;USD
+65;Egypt;Египет;EGY;EG;EGP
+66;El Salvador;Сальвадор;SLV;SV;USD
+67;Equatorial Guinea;Экваториальная Гвинея;GNQ;GQ;XAF
+68;Eritrea;Эритрея;ERI;ER;ERN
+69;Estonia;Эстония;EST;EE;EUR
+70;Ethiopia;Эфиопия;ETH;ET;ETB
+71;Falkland Islands;Фолклендские острова;FLK;FK;FKP
+72;Faroe Islands;Фарерские острова;FRO;FO;DKK
+73;Fiji Islands;Острова Фиджи;FJI;FJ;FJD
+74;Finland;Финляндия;FIN;FI;EUR
+75;France;Франция;FRA;FR;EUR
+76;French Guiana;Французская Гвиана;GUF;GF;EUR
+77;French Polynesia;Французская Полинезия;PYF;PF;XPF
+78;French Southern Territories;Южные Французские Территории;ATF;TF;EUR
+79;Gabon;Габон;GAB;GA;XAF
+80;The Gambia;Гамбия;GMB;GM;GMD
+81;Georgia;Грузия;GEO;GE;GEL
+82;Germany;Германия;DEU;DE;EUR
+83;Ghana;Гана;GHA;GH;GHS
+84;Gibraltar;Гибралтар;GIB;GI;GIP
+85;Greece;Греция;GRC;GR;EUR
+86;Greenland;Гренландия;GRL;GL;DKK
+87;Grenada;Гренада;GRD;GD;XCD
+88;Guadeloupe;Гваделупа;GLP;GP;EUR
+89;Guam;Гуам;GUM;GU;USD
+90;Guatemala;Гватемала;GTM;GT;GTQ
+91;Guernsey and Alderney;Гернси и Олдерни;GGY;GG;GBP
+92;Guinea;Гвинея;GIN;GN;GNF
+93;Guinea-Bissau;Гвинея-Бисау;GNB;GW;XOF
+94;Guyana;Гайана;GUY;GY;GYD
+95;Haiti;Гаити;HTI;HT;HTG
+96;Heard Island and McDonald Islands;Остров Херд и остров Макдональд;HMD;HM;AUD
+97;Honduras;Гондурас;HND;HN;HNL
+98;Hong Kong S.A.R.;Гонконг;HKG;HK;HKD
+99;Hungary;Венгрия;HUN;HU;HUF
+100;Iceland;Исландия;ISL;IS;ISK
+101;India;Индия;IND;IN;INR
+102;Indonesia;Индонезия;IDN;ID;IDR
+103;Iran;Иран;IRN;IR;IRR
+104;Iraq;Ирак;IRQ;IQ;IQD
+105;Ireland;Ирландия;IRL;IE;EUR
+106;Israel;Израиль;ISR;IL;ILS
+107;Italy;Италия;ITA;IT;EUR
+108;Jamaica;Ямайка;JAM;JM;JMD
+109;Japan;Япония;JPN;JP;JPY
+110;Jersey;Джерси;JEY;JE;GBP
+111;Jordan;Иордания;JOR;JO;JOD
+112;Kazakhstan;Казахстан;KAZ;KZ;KZT
+113;Kenya;Кения;KEN;KE;KES
+114;Kiribati;Кирибати;KIR;KI;AUD
+115;Korea North;Северная Корея(КНДР);PRK;KP;KPW
+116;Korea South;Южная Корея;KOR;KR;KRW
+117;Kuwait;Кувейт;KWT;KW;KWD
+118;Kyrgyzstan;Киргизия;KGZ;KG;KGS
+119;Laos;Лаос;LAO;LA;LAK
+120;Latvia;Латвия;LVA;LV;EUR
+121;Lebanon;Ливан;LBN;LB;LBP
+122;Lesotho;Лесото;LSO;LS;LSL
+123;Liberia;Либерия;LBR;LR;LRD
+124;Libya;Ливия;LBY;LY;LYD
+125;Liechtenstein;Лихтенштейн;LIE;LI;CHF
+126;Lithuania;Литва;LTU;LT;EUR
+127;Luxembourg;Люксембург;LUX;LU;EUR
+128;Macau S.A.R.;Макао;MAC;MO;MOP
+129;Macedonia;Македония;MKD;MK;MKD
+130;Madagascar;Мадагаскар;MDG;MG;MGA
+131;Malawi;Малави;MWI;MW;MWK
+132;Malaysia;Малайзия;MYS;MY;MYR
+133;Maldives;Мальдивы;MDV;MV;MVR
+134;Mali;Мали;MLI;ML;XOF
+135;Malta;Мальта;MLT;MT;EUR
+136;Man (Isle of);Остров Мэн;IMN;IM;GBP
+137;Marshall Islands;Маршалловы острова;MHL;MH;USD
+138;Martinique;Мартиника;MTQ;MQ;EUR
+139;Mauritania;Мавритания;MRT;MR;MRO
+140;Mauritius;Маврикий;MUS;MU;MUR
+141;Mayotte;Майотта;MYT;YT;EUR
+142;Mexico;Мексика;MEX;MX;MXN
+143;Micronesia;Микронезия;FSM;FM;USD
+144;Moldova;Молдова;MDA;MD;MDL
+145;Monaco;Монако;MCO;MC;EUR
+146;Mongolia;Монголия;MNG;MN;MNT
+147;Montenegro;Черногория;MNE;ME;EUR
+148;Montserrat;Монтсеррат;MSR;MS;XCD
+149;Morocco;Марокко;MAR;MA;MAD
+150;Mozambique;Мозамбик;MOZ;MZ;MZN
+151;Myanmar;Мьянма;MMR;MM;MMK
+152;Namibia;Намибия;NAM;NA;NAD
+153;Nauru;Науру;NRU;NR;AUD
+154;Nepal;Непал;NPL;NP;NPR
+155;Bonaire, Sint Eustatius and Saba;Бонайре, Синт-Эстатиус и Саба;BES;BQ;USD
+156;Netherlands;Нидерланды;NLD;NL;EUR
+157;New Caledonia;Новая Каледония;NCL;NC;XPF
+158;New Zealand;Новая Зеландия;NZL;NZ;NZD
+159;Nicaragua;Никарагуа;NIC;NI;NIO
+160;Niger;Нигер;NER;NE;XOF
+161;Nigeria;Нигерия;NGA;NG;NGN
+162;Niue;Ниуэ;NIU;NU;NZD
+163;Norfolk Island;Остров Норфолк;NFK;NF;AUD
+164;Northern Mariana Islands;Северные Марианские острова;MNP;MP;USD
+165;Palau;Палау;NOR;NO;NOK
+166;Oman;Оман;OMN;OM;OMR
+167;Pakistan;Пакистан;PAK;PK;PKR
+168;Palau;Палау;PLW;PW;USD
+169;Palestinian Territory;Палестинские территории;PSE;PS;ILS
+170;Panama;Панама;PAN;PA;PAB
+171;Papua new Guinea;Папуа - Новая Гвинея;PNG;PG;PGK
+172;Paraguay;Парагвай;PRY;PY;PYG
+173;Peru;Перу;PER;PE;PEN
+174;Philippines;Филиппины;PHL;PH;PHP
+175;Pitcairn Island;Остров Питкэрн;PCN;PN;NZD
+176;Poland;Польша;POL;PL;PLN
+177;Portugal;Португалия;PRT;PT;EUR
+178;Puerto Rico;Пуэрто-Рико;PRI;PR;USD
+179;Qatar;Катар;QAT;QA;QAR
+180;Reunion;Реюньон;REU;RE;EUR
+181;Romania;Румыния;ROU;RO;RON
+182;Russia;Россия;RUS;RU;RUB
+183;Rwanda;Руанда;RWA;RW;RWF
+184;Saint Helena;Остров Святой Елены;SHN;SH;SHP
+185;Saint Kitts And Nevis;Сент-Китс и Невис;KNA;KN;XCD
+186;Saint Lucia;Сент-Люсия;LCA;LC;XCD
+187;Saint Pierre and Miquelon;Сен-Пьер и Микелон;SPM;PM;EUR
+188;Saint Vincent And The Grenadines;Сент-Винсент и Гренадины;VCT;VC;XCD
+189;Saint-Barthelemy;Сен-Бартелеми;BLM;BL;EUR
+190;Saint-Martin (French part);Сен-Мартен (французская часть);MAF;MF;EUR
+191;Samoa;Самоа;WSM;WS;WST
+192;San Marino;Сан-Марино;SMR;SM;EUR
+193;Sao Tome and Principe;Сан-Томе и Принсипи;STP;ST;STD
+194;Saudi Arabia;Саудовская Аравия;SAU;SA;SAR
+195;Senegal;Сенегал;SEN;SN;XOF
+196;Serbia;Сербия;SRB;RS;RSD
+197;Seychelles;Сейшельские острова;SYC;SC;SCR
+198;Sierra Leone;Сьерра-Леоне;SLE;SL;SLL
+199;Singapore;Сингапур;SGP;SG;SGD
+200;Slovakia;Словакия;SVK;SK;EUR
+201;Slovenia;Словения;SVN;SI;EUR
+202;Solomon Islands;Соломоновы острова;SLB;SB;SBD
+203;Somalia;Сомали;SOM;SO;SOS
+204;South Africa;Южная Африка;ZAF;ZA;ZAR
+205;South Georgia;Южная Джорджия;SGS;GS;GBP
+206;South Sudan;Южный Судан;SSD;SS;SSP
+207;Spain;Испания;ESP;ES;EUR
+208;Sri Lanka;Шри-Ланка;LKA;LK;LKR
+209;Sudan;Судан;SDN;SD;SDG
+210;Suriname;Суринам;SUR;SR;SRD
+211;Svalbard And Jan Mayen;Шпицберген и Ян-Майен;SJM;SJ;NOK
+212;Swaziland;Свазиленд;SWZ;SZ;SZL
+213;Sweden;Швеция;SWE;SE;SEK
+214;Switzerland;Швейцария;CHE;CH;CHF
+215;Syria;Сирия;SYR;SY;SYP
+216;Taiwan;Тайвань;TWN;TW;TWD
+217;Tajikistan;Таджикистан;TJK;TJ;TJS
+218;Tanzania;Танзания;TZA;TZ;TZS
+219;Thailand;Таиланд;THA;TH;THB
+220;Togo;Того;TGO;TG;XOF
+221;Tokelau;Токелау;TKL;TK;NZD
+222;Tonga;Тонга;TON;TO;TOP
+223;Trinidad And Tobago;Тринидад и Тобаго;TTO;TT;TTD
+224;Tunisia;Тунис;TUN;TN;TND
+225;Turkey;Турция;TUR;TR;TRY
+226;Turkmenistan;Туркменистан;TKM;TM;TMT
+227;Turks And Caicos Islands;Острова Теркс и Кайкос;TCA;TC;USD
+228;Tuvalu;Тувалу;TUV;TV;AUD
+229;Uganda;Уганда;UGA;UG;UGX
+230;Ukraine;Украина;UKR;UA;UAH
+231;United Arab Emirates;Объединенные Арабские Эмираты;ARE;AE;AED
+232;United Kingdom;Великобритания;GBR;GB;GBP
+233;United States;Соединенные Штаты Америки;USA;US;USD
+234;United States Minor Outlying Islands;Внешние малые о-ва (США);UMI;UM;USD
+235;Uruguay;Уругвай;URY;UY;UYU
+236;Uzbekistan;Узбекистан;UZB;UZ;UZS
+237;Vanuatu;Вануату;VUT;VU;VUV
+238;Vatican City State (Holy See);Государство-город Ватикан (Папский Престол);VAT;VA;EUR
+239;Venezuela;Венесуэла;VEN;VE;VEF
+240;Vietnam;Вьетнам;VNM;VN;VND
+241;Virgin Islands (British);Британские Виргинские острова;VGB;VG;USD
+242;Virgin Islands (US);Американские Виргинские острова;VIR;VI;USD
+243;Wallis And Futuna Islands;о-ва Уоллис и Футуна;WLF;WF;XPF
+244;Western Sahara;Западная Сахара;ESH;EH;MAD
+245;Yemen;Йемен;YEM;YE;YER
+246;Zambia;Замбия;ZMB;ZM;ZMW
+247;Zimbabwe;Зимбабве;ZWE;ZW;ZWL
+248;Kosovo;Косово;XKX;XK;EUR
+249;Curaсao;Кюрасао;CUW;CW;ANG
+250;Sint Maarten (Dutch part);Синт-Мартен;SXM;SX;ANG

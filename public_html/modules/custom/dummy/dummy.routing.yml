@@ -1,0 +1,7 @@
+dummy.page_dummy:
+  path: '/dummy'
+  defaults:
+    _controller:  'Drupal\dummy\Controller\DummyController::pageDummy'
+    _title: 'Dummy'
+  requirements:
+    _permission: 'access content'
