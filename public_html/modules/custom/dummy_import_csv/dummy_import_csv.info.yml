@@ -1,0 +1,7 @@
+#https://niklan.net/blog/133
+
+name: dummy import csv
+type: module
+description: 'dummy import csv'
+package: 'Dummy'
+core_version_requirement: ^9
