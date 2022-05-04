@@ -1,0 +1,5 @@
+name: dummy_ajax
+description: dummy_ajax exemple ajax
+type: module
+core_version_requirement: ^9
+package: 'Dummy'

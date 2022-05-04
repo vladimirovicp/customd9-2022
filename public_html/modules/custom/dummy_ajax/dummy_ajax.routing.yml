@@ -1,0 +1,15 @@
+dummy_ajax.demo1:
+  path: '/ajax-form/demo1'
+  defaults:
+    _form: '\Drupal\dummy_ajax\Form\AjaxFormDemo1'
+    _title: 'Ajax demo1'
+  requirements:
+    _permission: 'access content'
+
+dummy_ajax.demo2:
+  path: '/ajax-form/demo2'
+  defaults:
+    _form: '\Drupal\dummy_ajax\Form\AjaxFormDemo2'
+    _title: 'Ajax demo2'
+  requirements:
+    _permission: 'access content'
