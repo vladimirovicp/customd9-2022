@@ -82,9 +82,12 @@ class DummyCountryStateCityWidget extends WidgetBase
       '#options' => $country_options,
 //    '#default_value' => '182',
       '#suffix' => '<div id="edit-output">tid = <span id="country-tid"></span></div>',
+//      '#ajax' => [
+//        'callback' => '_ajaxFillState',
+//        'event' => 'change',
+//      ],
       '#ajax' => [
-        'callback' => '_ajaxFillState',
-        'event' => 'change',
+        'callback' => '::logSomething',
       ],
     ];
 
@@ -104,7 +107,7 @@ class DummyCountryStateCityWidget extends WidgetBase
 
 
 
-
+    $element['#attached']['library'][] = 'ajax_form_submit_js/loggy';
 
     return $element;
 
@@ -112,11 +115,13 @@ class DummyCountryStateCityWidget extends WidgetBase
 
   public function _ajaxFillState(array $form, FormStateInterface $form_state) {
 
-    $id_country = '182';
+    //$id_country = '182';
+
+    //dpm('123');
 
 
-    $response = new AjaxResponse();
-    $response->addCommand(new HtmlCommand('#country-tid', $id_country));
+    //$response = new AjaxResponse();
+   // $response->addCommand(new HtmlCommand('#country-tid', $id_country));
     //$response->addCommand(new HtmlCommand('#edit-field-dummy-csc-0-state', $id_country));
 
     //$response->addCommand(new InvokeCommand('.js-form-item-field-dummy-csc-0-state select', 'attr', array('disabled', false )));
@@ -125,6 +130,18 @@ class DummyCountryStateCityWidget extends WidgetBase
 
     //$response->addCommand(new InvokeCommand('.field--name-field-city select', 'attr', array('disabled', $field_city_disabled ))); // field-city select активный
 
+  }
+
+  /**
+   * Setting the message in our form.
+   */
+  public function logSomething(array $form, FormStateInterface $form_state) {
+
+    $response = new AjaxResponse();
+    $response->addCommand(
+      new InvokeCommand(NULL, 'loggy', ['hhhhhhh'])
+    );
+    return $response;
   }
 
 }
