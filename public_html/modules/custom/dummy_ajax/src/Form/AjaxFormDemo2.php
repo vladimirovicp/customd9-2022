@@ -21,7 +21,6 @@ class AjaxFormDemo2 extends FormBase{
   public function buildForm(array $form, FormStateInterface $form_state){
 
 
-
     $state_options = static::getFirstDropdownOptionOptions();
 
 
@@ -39,18 +38,64 @@ class AjaxFormDemo2 extends FormBase{
 
     $country_options = static::getCountryOption();
 
+    if(empty($form_state->getValue('country'))){
+      //dpm(key($country_options));
+      $country_default_value = key($country_options);
+
+      $country_default_value = '-- Select an option --';
+
+    }
+    else {
+      $country_default_value = $form_state->getValue('country');
+    }
+
+    //$country_default_value
+
 
     $form['country'] = [
       '#type' => 'select',
       '#title' => $this->t('Country'),
-      '#empty_option' => $this->t('-- Select an option --'),
+      '#empty_option' => $country_default_value,
       '#options' => $country_options,
+      '#ajax' => [
+        'callback' => '::instrumentCityCallback',
+        'wrapper' => 'city-fieldset-container2',
+        'event' => 'change',
+      ],
     ];
+
+
+   // dpm(static ::getCityOption($country_default_value));
+
+
+    $form['city_fieldset_container'] = [
+      '#type' => 'container',
+      '#attributes' => ['id' => 'city-fieldset-container2'],
+    ];
+
+    $form['city_fieldset_container']['select_fieldset'] = [
+      '#type' => 'fieldset',
+      '#title' => $this->t('City'),
+    ];
+
+
+    $form['city_fieldset_container']['select_fieldset']['city'] = [
+      '#type' => 'select',
+      '#title' => $this->t('City'),
+      '#options' => static ::getCityOption($country_default_value),
+      '#default_value' => !empty($form_state->getValue('city')) ? $form_state->getValue('city') : 'none',
+    ];
+
+//    '#type' => 'select',
+//      '#title' => $state_options[$select_option] . '  ' . $this->t('State'),
+//      '#options' => static ::getSecondDropdownOptions($select_option),
+//      '#default_value' => !empty($form_state->getValue('select_drobdown')) ? $form_state->getValue('select_dropdown') : 'none',
 
     $form['option_state_fieldset'] = [
       '#type' => 'fieldset',
       '#title' => $this->t('Choose State'),
     ];
+
 
     $form['option_state_fieldset']['state_dropdown'] = [
       '#type' => 'select',
@@ -93,6 +138,14 @@ class AjaxFormDemo2 extends FormBase{
       $form['select_fieldset_container']['select_fieldset']['submit']['#disabled'] = true;
     }
 
+    //dpm($country_default_value);
+
+    if($country_default_value == '-- Select an option --'){
+      $form['city_fieldset_container']['select_fieldset']['city']['title'] = $this->t('dfgdfghfg');
+      $form['city_fieldset_container']['select_fieldset']['city']['#disabled'] = true;
+    }
+
+
 
     return $form;
   }
@@ -100,20 +153,26 @@ class AjaxFormDemo2 extends FormBase{
   /**
    * Setting the message in our form.
    */
-  public function setMessage(array $form, FormStateInterface $form_state) {
-
-    $response = new AjaxResponse();
-    $response->addCommand(
-      new HtmlCommand(
-        '.result_message',
-        '<div class="my_top_message">' . t('The results is @result', ['@result' => ($form_state->getValue('number_1') + $form_state->getValue('number_2'))]) . '</div>'
-      )
-    );
-    return $response;
-  }
+//  public function setMessage(array $form, FormStateInterface $form_state) {
+//
+//    $response = new AjaxResponse();
+//    $response->addCommand(
+//      new HtmlCommand(
+//        '.result_message',
+//        '<div class="my_top_message">' . t('The results is @result', ['@result' => ($form_state->getValue('number_1') + $form_state->getValue('number_2'))]) . '</div>'
+//      )
+//    );
+//    return $response;
+//  }
 
   public function instrumentDropdownCallback(array $form, FormStateInterface $form_state) {
     return $form['select_fieldset_container'];
+  }
+
+
+  public function instrumentCityCallback(array $form, FormStateInterface $form_state) {
+    //return $form['city'];
+    return $form['city_fieldset_container'];
   }
 
 
@@ -122,10 +181,10 @@ class AjaxFormDemo2 extends FormBase{
     $module_handler = \Drupal::service('module_handler');
     $module_path = $module_handler->getModule('dummy_ajax')->getPath();
 
-    //$country_options = [];
+    //$country_options = ['-- Select an option --'];
+
 
     $i = 0;
-
     $handle = @fopen($module_path . '/files/countries.csv', "r");
 
     if ($handle) {
@@ -147,8 +206,33 @@ class AjaxFormDemo2 extends FormBase{
 
     }
 
-
     return  $country_options;
+  }
+
+  public static function getCityOption($key = ''){
+//    dpm('|||');
+//    dpm($key);
+    switch ($key){
+      case 1:
+        $options = [
+          '1' => 'Первый 1',
+          '2' => 'Первый 2',
+          '3' => 'Первый 3',
+        ];
+        break;
+
+      case 'y':
+        $options = [
+          'Второй 1' => 'Второй 1',
+          'Второй 2' => 'Второй 2',
+        ];
+        break;
+
+      default:
+        $options = ['none' => 'none'];
+        break;
+    }
+    return $options;
   }
 
 
