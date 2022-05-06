@@ -69,6 +69,19 @@ function dummy_extra_fields_entity_extra_field_info() {
 
 
 
+//  $extra['node']['article']['display']['extra_article_country'] = [
+//    'label' => new TranslatableMarkup('extra article country'),
+//    'description' => new TranslatableMarkup('Prints "extra article test" string.'),
+//  ];
+
+  $extra['node']['article']['form']['extra_article_country'] = [
+    'label' => t('extra article country'),
+    'weight' => 100,
+  ];
+
+
+
+
 
 
 
@@ -142,6 +155,17 @@ function dummy_extra_fields_form_node_form_alter(&$form, FormStateInterface $for
         '#title' => t('extra article test'),
         '#default_value' => t('fgdfgdf'),
         '#weight' => $component2['weight'],
+      ];
+
+    }
+
+    if ($component3 = $form_display->getComponent('extra_article_country')) {
+
+      $form['extra_article_country'] = [
+        '#type' => 'textfield',
+        '#title' => t('extra article country'),
+        '#default_value' => t('country extra'),
+        '#weight' => $component3['weight'],
       ];
 
     }

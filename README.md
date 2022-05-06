@@ -3,7 +3,10 @@
 
 ## Модули
 > * admin_toolbar
-> * devel (* composer require 'drupal/devel:^4.1')
+> * devel
+> *
+> * field_group
+> * autocomplete_deluxe
 
 ## Стандартные модули
 > * Configuration Translation

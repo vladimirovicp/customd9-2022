@@ -1,0 +1,5 @@
+name: dummy core
+type: module
+description: 'dummy core'
+package: 'Dummy'
+core_version_requirement: ^9
