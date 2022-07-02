@@ -24,8 +24,11 @@
         "drupal/country_state_city": "^2.1",
         "drupal/devel": "^4.1",
         "drupal/entitree": "^1.0",
+        "drupal/entity_hierarchy": "^3.1",
+        "drupal/entity_reference_revisions": "^1.9",
         "drupal/field_group": "^3.2",
         "drupal/restui": "^1.20",
+        "drupal/workbench_access": "^1.0@beta",
         "drush/drush": "^11.0"
     },
     "conflict": {

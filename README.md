@@ -17,6 +17,9 @@
 > * Media
 > * Media Library
 >
+> * Entity Reference Hierarchy
+> * Workbench Access
+> * Entity Reference Revisions
 
 ## Rest
 
@@ -30,6 +33,11 @@
 > * RESTful Web Services
 >
 >
+>
+
+## ddev comands
+> * **Экспорт:** ddev export-db --file=./private/db/current-db.sql.gz
+> * **Импорт:** ddev import-db --src=./private/db/ssudev.sql.gz
 
 ##video
 https://www.youtube.com/watch?v=5Tj-3o6aGws
