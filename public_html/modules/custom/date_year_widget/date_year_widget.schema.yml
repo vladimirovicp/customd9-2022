@@ -1,0 +1,10 @@
+field.widget.settings.date_year_widget:
+  type: mapping
+  label: 'Date year widget widget settings'
+  mapping:
+    size:
+      type: integer
+      label: 'Size'
+    placeholder:
+      type: textfield
+      label: 'Placeholder'
